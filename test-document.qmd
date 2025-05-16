@@ -2,7 +2,6 @@
 title: "test document for video"
 author: "Chris Gomez"
 format: html
-editor: visual
 ---
 
 ```{r}
@@ -10,3 +9,11 @@ library(tidyverse)
 library(lterdatasampler)
 data(pie_crab)
 ```
+
+```{r}
+ggplot(data = pie_crab,
+       aes(x = latitude,
+           y = size)) +
+  geom_point()
+```
+
